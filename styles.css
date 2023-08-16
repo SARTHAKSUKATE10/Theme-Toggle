@@ -29,7 +29,8 @@ body.dark {
 
 .title {
     margin: 0;
-    margin-bottom: .5rem;
+    margin-bottom: 2rem;
+    font-size: 40px;
 }
 
 .theme-toggle-button {
@@ -40,16 +41,19 @@ body.dark {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    padding: .5em 1em;
+    padding: 10px 20px;
     border-radius: .3em;
     border: none;
     outline: none;
+    font-size: 16px;
     transition: var(--transition-delay);
     transform: scale(1);
 }
-
+.icon{
+    fill: var(--background-color);
+}
 .theme-toggle-button .icon {
-    margin-right: .5rem;
+    margin-right: 20px;
 }
 
 .theme-toggle-button:hover,
@@ -59,6 +63,7 @@ body.dark {
 }
 
 .sun-moon-container {
+   
     --rotation: 0;
     pointer-events: none;
     position: absolute;
@@ -78,8 +83,8 @@ body.dark {
 .moon {
     position: absolute;
     transition: opacity fill, var(--transition-delay);
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     fill: var(--accent-color);
 }
 
